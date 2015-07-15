@@ -157,8 +157,8 @@
 				ADB2B1011B55225D00FBF741 /* WebSocket.swift */,
 			);
 			name = SocketIOClientSwift;
-			path = /Users/petrdorozkin/Desktop/METOO/METOO/SocketIOClientSwift;
-			sourceTree = "<absolute>";
+			path = ../Desktop/METOO/METOO/SocketIOClientSwift;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
