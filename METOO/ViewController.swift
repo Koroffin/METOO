@@ -33,8 +33,13 @@ class ViewController: UIViewController {
     
     func buttonAction(sender:UIButton!)
     {
-        let socket = SocketIOClient(socketURL: "https://morning-tundra-5050.herokuapp.com/")
-        socket.connect()
+        let socket = SocketIOClient(socketURL: "localhost:8080")
+        
+        socket.on("connect") {data, ack in
+            println("socket connected")
+        }
+        
+        
         
         socket.connect()
         println("Button tapped")
