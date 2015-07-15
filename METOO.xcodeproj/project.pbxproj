@@ -26,6 +26,13 @@
 		ADB2B0351B551F6200FBF741 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB2B0341B551F6200FBF741 /* Images.xcassets */; };
 		ADB2B0381B551F6200FBF741 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB2B0361B551F6200FBF741 /* LaunchScreen.xib */; };
 		ADB2B0441B551F6300FBF741 /* METOOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB2B0431B551F6300FBF741 /* METOOTests.swift */; };
+		ADC9E9F71B56DDF9006A4825 /* facebook_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = ADC9E9F61B56DDF9006A4825 /* facebook_logo.png */; };
+		ADC9EA041B56FBBE006A4825 /* HTTPRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9E9FE1B56FBBE006A4825 /* HTTPRequestSerializer.swift */; };
+		ADC9EA051B56FBBE006A4825 /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9E9FF1B56FBBE006A4825 /* HTTPResponseSerializer.swift */; };
+		ADC9EA061B56FBBE006A4825 /* HTTPSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9EA001B56FBBE006A4825 /* HTTPSecurity.swift */; };
+		ADC9EA071B56FBBE006A4825 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9EA011B56FBBE006A4825 /* HTTPStatusCode.swift */; };
+		ADC9EA081B56FBBE006A4825 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9EA021B56FBBE006A4825 /* HTTPTask.swift */; };
+		ADC9EA091B56FBBE006A4825 /* HTTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9EA031B56FBBE006A4825 /* HTTPUpload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +69,14 @@
 		ADB2B03D1B551F6300FBF741 /* METOOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = METOOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB2B0421B551F6300FBF741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADB2B0431B551F6300FBF741 /* METOOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = METOOTests.swift; sourceTree = "<group>"; };
+		ADC9E9F61B56DDF9006A4825 /* facebook_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_logo.png; sourceTree = "<group>"; };
+		ADC9E9FB1B56FB1B006A4825 /* SwiftHTTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftHTTP.h; sourceTree = "<group>"; };
+		ADC9E9FE1B56FBBE006A4825 /* HTTPRequestSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestSerializer.swift; sourceTree = "<group>"; };
+		ADC9E9FF1B56FBBE006A4825 /* HTTPResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseSerializer.swift; sourceTree = "<group>"; };
+		ADC9EA001B56FBBE006A4825 /* HTTPSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPSecurity.swift; sourceTree = "<group>"; };
+		ADC9EA011B56FBBE006A4825 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		ADC9EA021B56FBBE006A4825 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		ADC9EA031B56FBBE006A4825 /* HTTPUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPUpload.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,13 +138,16 @@
 		ADB2B02A1B551F6200FBF741 /* METOO */ = {
 			isa = PBXGroup;
 			children = (
+				ADC9E9FD1B56FBBE006A4825 /* SwiftHTTP */,
 				AD1458FD1B56A57F004D2F7F /* SocketIOClientSwift */,
 				ADB2B02D1B551F6200FBF741 /* AppDelegate.swift */,
 				ADB2B02F1B551F6200FBF741 /* ViewController.swift */,
 				ADB2B0311B551F6200FBF741 /* Main.storyboard */,
 				ADB2B0341B551F6200FBF741 /* Images.xcassets */,
+				ADC9E9F41B56DDF9006A4825 /* images */,
 				ADB2B0361B551F6200FBF741 /* LaunchScreen.xib */,
 				ADB2B02B1B551F6200FBF741 /* Supporting Files */,
+				ADC9E9FB1B56FB1B006A4825 /* SwiftHTTP.h */,
 			);
 			path = METOO;
 			sourceTree = "<group>";
@@ -157,6 +175,36 @@
 				ADB2B0421B551F6300FBF741 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADC9E9F41B56DDF9006A4825 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ADC9E9F51B56DDF9006A4825 /* buttons */,
+			);
+			name = images;
+			path = Images.xcassets/images;
+			sourceTree = "<group>";
+		};
+		ADC9E9F51B56DDF9006A4825 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				ADC9E9F61B56DDF9006A4825 /* facebook_logo.png */,
+			);
+			path = buttons;
+			sourceTree = "<group>";
+		};
+		ADC9E9FD1B56FBBE006A4825 /* SwiftHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				ADC9E9FE1B56FBBE006A4825 /* HTTPRequestSerializer.swift */,
+				ADC9E9FF1B56FBBE006A4825 /* HTTPResponseSerializer.swift */,
+				ADC9EA001B56FBBE006A4825 /* HTTPSecurity.swift */,
+				ADC9EA011B56FBBE006A4825 /* HTTPStatusCode.swift */,
+				ADC9EA021B56FBBE006A4825 /* HTTPTask.swift */,
+				ADC9EA031B56FBBE006A4825 /* HTTPUpload.swift */,
+			);
+			path = SwiftHTTP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +289,7 @@
 			files = (
 				ADB2B0331B551F6200FBF741 /* Main.storyboard in Resources */,
 				ADB2B0381B551F6200FBF741 /* LaunchScreen.xib in Resources */,
+				ADC9E9F71B56DDF9006A4825 /* facebook_logo.png in Resources */,
 				ADB2B0351B551F6200FBF741 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,12 +317,18 @@
 				ADB2B0301B551F6200FBF741 /* ViewController.swift in Sources */,
 				AD1459131B56A57F004D2F7F /* SocketPacket.swift in Sources */,
 				AD14590F1B56A57F004D2F7F /* SocketEventHandler.swift in Sources */,
+				ADC9EA041B56FBBE006A4825 /* HTTPRequestSerializer.swift in Sources */,
 				AD1459121B56A57F004D2F7F /* SocketLogger.swift in Sources */,
 				AD1459101B56A57F004D2F7F /* SocketFixUTF8.swift in Sources */,
 				AD1459151B56A57F004D2F7F /* SocketTypes.swift in Sources */,
+				ADC9EA061B56FBBE006A4825 /* HTTPSecurity.swift in Sources */,
 				AD14590C1B56A57F004D2F7F /* SocketAnyEvent.swift in Sources */,
 				ADB2B02E1B551F6200FBF741 /* AppDelegate.swift in Sources */,
+				ADC9EA091B56FBBE006A4825 /* HTTPUpload.swift in Sources */,
+				ADC9EA081B56FBBE006A4825 /* HTTPTask.swift in Sources */,
 				AD1459141B56A57F004D2F7F /* SocketParser.swift in Sources */,
+				ADC9EA071B56FBBE006A4825 /* HTTPStatusCode.swift in Sources */,
+				ADC9EA051B56FBBE006A4825 /* HTTPResponseSerializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
