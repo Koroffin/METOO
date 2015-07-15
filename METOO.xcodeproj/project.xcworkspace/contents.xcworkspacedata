@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TicTacIOiOS.xcodeproj">
+      location = "self:METOO.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,18 +1,16 @@
 //
 //  ViewController.swift
-//  TicTacIOiOS
+//  METOO
 //
-//  Created by Erik Little on 3/7/15.
+//  Created by Петр Дорожкин on 14.07.15.
+//  Copyright (c) 2015 Петр Дорожкин. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController, UIAlertViewDelegate {
-    
     let socket = SocketIOClient(socketURL: "https://morning-tundra-5050.herokuapp.com")
-    var name:String?
-    var resetAck:AckEmitter?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,20 +22,16 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         
         self.view.addSubview(button)
         
-        
-        
     }
-    func buttonAction(sender:UIButton!)
-    {
+    
+    func buttonAction(sender:UIButton!) {
         socket.on("connect") {data, ack in
             println("socket connected")
         }
-        self.socket.connect()
+        socket.connect()
     }
 
-    
-    
-    
-    
 }
+
+
 
