@@ -8,7 +8,6 @@
 
 import UIKit
 
-var base_url = "https://morning-tundra-5050.herokuapp.com"
 
 class ViewController: UIViewController, UIAlertViewDelegate {
 

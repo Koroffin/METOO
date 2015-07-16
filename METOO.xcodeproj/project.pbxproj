@@ -33,6 +33,7 @@
 		ADC9EA071B56FBBE006A4825 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9EA011B56FBBE006A4825 /* HTTPStatusCode.swift */; };
 		ADC9EA081B56FBBE006A4825 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9EA021B56FBBE006A4825 /* HTTPTask.swift */; };
 		ADC9EA091B56FBBE006A4825 /* HTTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9EA031B56FBBE006A4825 /* HTTPUpload.swift */; };
+		ADC9EA0D1B57CEE2006A4825 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9EA0C1B57CEE2006A4825 /* config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		ADC9EA011B56FBBE006A4825 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		ADC9EA021B56FBBE006A4825 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
 		ADC9EA031B56FBBE006A4825 /* HTTPUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPUpload.swift; sourceTree = "<group>"; };
+		ADC9EA0C1B57CEE2006A4825 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				ADB2B0361B551F6200FBF741 /* LaunchScreen.xib */,
 				ADB2B02B1B551F6200FBF741 /* Supporting Files */,
 				ADC9E9FB1B56FB1B006A4825 /* SwiftHTTP.h */,
+				ADC9EA0C1B57CEE2006A4825 /* config.swift */,
 			);
 			path = METOO;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				AD1459111B56A57F004D2F7F /* SocketIOClient.swift in Sources */,
 				AD14590B1B56A57F004D2F7F /* SocketAckManager.swift in Sources */,
 				AD14590E1B56A57F004D2F7F /* SocketEngineClient.swift in Sources */,
+				ADC9EA0D1B57CEE2006A4825 /* config.swift in Sources */,
 				AD1459161B56A57F004D2F7F /* SwiftRegex.swift in Sources */,
 				AD1459171B56A57F004D2F7F /* WebSocket.swift in Sources */,
 				AD14590D1B56A57F004D2F7F /* SocketEngine.swift in Sources */,
