@@ -15,15 +15,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let button   = UIButton.buttonWithType(UIButtonType.System) as! UIButton
-        button.frame = CGRectMake(100, 100, 100, 50)
-        button.backgroundColor = UIColor.greenColor()
-        button.setTitle("Test Button", forState: UIControlState.Normal)
-        button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        self.view.addSubview(button)
-        
+                
     }
     
     func httpGet(url: String, callback: (String, String?) -> Void) {
@@ -82,12 +74,13 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         
     }
     
-    func buttonAction(sender:UIButton!) {
+    @IBAction func SocketButton(sender: UIButton) {
         socket.on("connect") {data, ack in
             println("socket connected")
         }
         socket.connect()
     }
+
 
     @IBAction func FBLoginButton(sender: UIButton) {
 //        httpGet(base_url){
