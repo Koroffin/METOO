@@ -9,13 +9,14 @@
 import UIKit
 
 
+
 class ViewController: UIViewController, UIAlertViewDelegate {
 
     let socket = SocketIOClient(socketURL: base_url)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
     }
     
     func httpGet(url: String, callback: (String, String?) -> Void) {
@@ -99,6 +100,12 @@ class ViewController: UIViewController, UIAlertViewDelegate {
                 println(data)
             }
         }
+    }
+    
+    @IBOutlet weak var MainIndicator: UIActivityIndicatorView!
+    
+    @IBAction func VKButton(sender: UIButton) {
+
     }
     
     

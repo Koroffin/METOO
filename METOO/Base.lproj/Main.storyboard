@@ -77,10 +77,22 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ixi-X7-6kw">
                                 <rect key="frame" x="184" y="161" width="20" height="20"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCn-96-cNq">
+                                <rect key="frame" x="184" y="306" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="VKButton:" destination="236-w5-9PP" eventType="touchDown" id="A6l-9y-pHM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.83515968337158941" blue="0.14561456091941749" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="zPp-0y-H3b"/>
+                    <connections>
+                        <outlet property="MainIndicator" destination="ixi-X7-6kw" id="YHK-Ju-dZ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fd7-o6-Z83" sceneMemberID="firstResponder"/>
             </objects>
