@@ -1,0 +1,6 @@
+framework module Vkontakte_iOS_SDK_LV {
+  umbrella header "Vkontakte-iOS-SDK-LV-umbrella.h"
+
+  export *
+  module * { export * }
+}

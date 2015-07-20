@@ -54,10 +54,10 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods/Socket_IO_Client_Swift.framework'
   install_framework 'Pods/SwiftHTTP.framework'
-  install_framework 'Pods/VK_ios_sdk.framework'
+  install_framework 'Pods/Vkontakte_iOS_SDK_LV.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods/Socket_IO_Client_Swift.framework'
   install_framework 'Pods/SwiftHTTP.framework'
-  install_framework 'Pods/VK_ios_sdk.framework'
+  install_framework 'Pods/Vkontakte_iOS_SDK_LV.framework'
 fi
