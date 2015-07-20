@@ -27,5 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
     }
     
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: NSString?, annotation: AnyObject) -> Bool {
+        
+        var wasHandled:Bool = VKSdk.processOpenURL(url, fromApplication: sourceApplication)
+        
+        return wasHandled
+    }
     
 }

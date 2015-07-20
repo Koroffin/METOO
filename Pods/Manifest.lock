@@ -1,0 +1,16 @@
+PODS:
+  - Socket.IO-Client-Swift (2.3.9)
+  - SwiftHTTP (0.9.5)
+  - VK-ios-sdk (1.1.12)
+
+DEPENDENCIES:
+  - Socket.IO-Client-Swift (~> 2.3.9)
+  - SwiftHTTP
+  - VK-ios-sdk
+
+SPEC CHECKSUMS:
+  Socket.IO-Client-Swift: cb906b7964e17d657054862941b67921f57f168a
+  SwiftHTTP: cd7b248bc07db02926ff54cf19b580b78f7abfa1
+  VK-ios-sdk: 53e366d221b24cc0ef6f31c6e9dfae5f12eea054
+
+COCOAPODS: 0.38.0
