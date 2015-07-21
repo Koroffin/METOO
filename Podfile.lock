@@ -1,14 +1,36 @@
 PODS:
+  - Bolts (1.2.0):
+    - Bolts/AppLinks (= 1.2.0)
+    - Bolts/Tasks (= 1.2.0)
+  - Bolts/AppLinks (1.2.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.2.0)
+  - FBSDKCoreKit (4.4.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc (= 4.4.0)
+    - FBSDKCoreKit/no-arc (= 4.4.0)
+  - FBSDKCoreKit/arc (4.4.0):
+    - Bolts (~> 1.1)
+  - FBSDKCoreKit/no-arc (4.4.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc
+  - FBSDKLoginKit (4.4.0):
+    - FBSDKCoreKit
   - Socket.IO-Client-Swift (2.3.9)
   - SwiftHTTP (0.9.5)
   - Vkontakte-iOS-SDK-LV (4.7.14)
 
 DEPENDENCIES:
+  - FBSDKCoreKit
+  - FBSDKLoginKit
   - Socket.IO-Client-Swift (~> 2.3.9)
   - SwiftHTTP
   - Vkontakte-iOS-SDK-LV
 
 SPEC CHECKSUMS:
+  Bolts: d176cb1e0012175589e389a9db49b85e27787576
+  FBSDKCoreKit: 75bdd75c980e811db218488d99dd93b7740f4474
+  FBSDKLoginKit: 02a9254a4c132412fa03577b0d53e936d068a7fb
   Socket.IO-Client-Swift: cb906b7964e17d657054862941b67921f57f168a
   SwiftHTTP: cd7b248bc07db02926ff54cf19b580b78f7abfa1
   Vkontakte-iOS-SDK-LV: 5145211c3e25b50e530362ec45c00b908fd18cb0

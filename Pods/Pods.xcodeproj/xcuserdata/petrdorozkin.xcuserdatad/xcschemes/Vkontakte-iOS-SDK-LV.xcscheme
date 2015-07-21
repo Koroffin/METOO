@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53EBC381182A176ECB480C12"
+               BlueprintIdentifier = "0B664A46B626669BDBCA1F8E"
                BuildableName = "Vkontakte_iOS_SDK_LV.framework"
                BlueprintName = "Vkontakte-iOS-SDK-LV"
                ReferencedContainer = "container:Pods.xcodeproj">
