@@ -5,3 +5,5 @@ use_frameworks!
 pod 'Socket.IO-Client-Swift', '~> 2.3.9' # Or latest version
 pod 'SwiftHTTP'
 pod 'Vkontakte-iOS-SDK-LV'
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
