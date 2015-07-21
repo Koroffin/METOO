@@ -32,8 +32,8 @@
 /* Begin PBXFileReference section */
 		3569E350E92836FF18AB2F42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4D88D6290FFE6F54762659E0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AD599C531B5ECA71008FFD01 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 		AD9F3B0C1B5D7C020097280C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		AD9F3BC71B5D8C1D0097280C /* METOO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "METOO-Bridging-Header.h"; sourceTree = "<group>"; };
 		ADB2B0281B551F6200FBF741 /* METOO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = METOO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB2B02C1B551F6200FBF741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADB2B02D1B551F6200FBF741 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 				ADB2B0361B551F6200FBF741 /* LaunchScreen.xib */,
 				ADB2B02B1B551F6200FBF741 /* Supporting Files */,
 				ADC9EA0C1B57CEE2006A4825 /* config.swift */,
-				AD9F3BC71B5D8C1D0097280C /* METOO-Bridging-Header.h */,
+				AD599C531B5ECA71008FFD01 /* Bridge-Header.h */,
 			);
 			path = METOO;
 			sourceTree = "<group>";
@@ -454,7 +454,7 @@
 				INFOPLIST_FILE = METOO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "METOO/METOO-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "METOO/Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -468,7 +468,7 @@
 				INFOPLIST_FILE = METOO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "METOO/METOO-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "METOO/Bridge-Header.h";
 			};
 			name = Release;
 		};

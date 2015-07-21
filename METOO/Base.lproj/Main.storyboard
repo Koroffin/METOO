@@ -16,32 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZR-OU-ujz">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                <state key="normal" image="facebook_logo.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="FBLoginButton:" destination="BYZ-38-t0r" eventType="touchDown" id="uh6-6r-0zN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4X-L1-s4g">
                                 <rect key="frame" x="27" y="188" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Socket">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="257" width="46" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="250" y="257" width="300" height="50"/>
+                                </variation>
                                 <connections>
                                     <action selector="SocketButton:" destination="BYZ-38-t0r" eventType="touchDown" id="2tK-7T-cEQ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.67925252201118158" green="1" blue="0.64831779604081818" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Hfr-Zo-XTd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951" y="265"/>
+            <point key="canvasLocation" x="1035" y="-48.75"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gWB-XV-pcb">
@@ -73,33 +70,13 @@
                     <view key="view" contentMode="scaleToFill" id="GEm-7x-OL3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ixi-X7-6kw">
-                                <rect key="frame" x="184" y="161" width="20" height="20"/>
-                            </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCn-96-cNq">
-                                <rect key="frame" x="184" y="306" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="VKButton:" destination="236-w5-9PP" eventType="touchDown" id="A6l-9y-pHM"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="0.83515968337158941" blue="0.14561456091941749" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="zPp-0y-H3b"/>
-                    <connections>
-                        <outlet property="MainIndicator" destination="ixi-X7-6kw" id="YHK-Ju-dZ4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fd7-o6-Z83" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="840" y="671"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="facebook_logo.png" width="200" height="200"/>
-    </resources>
 </document>
